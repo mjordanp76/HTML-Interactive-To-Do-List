@@ -1,0 +1,59 @@
+body {
+    background-color: #F0F8FA;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    font-size: 1.5rem;
+}
+
+.done {
+    color: rgba(150, 150, 150, 0.9);
+    text-decoration: line-through;
+}
+
+.complete-btn {
+    margin: 10px;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border-radius: 7px;
+    color: white;
+    background-color: #22aa13;
+}
+
+.btn-done {
+    margin: 10px;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border-radius: 7px;
+    border-color: #bbb;
+    color: white;
+    background-color: #cecfce;
+}
+
+.delete-btn {
+    margin: 10px;
+    line-height: 1.8rem;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    background-color: #e33a31;
+}
+
+#input {
+    text-align: center;
+}
+
+@media (max-width: 349px){
+    li{
+        width: 100%;
+    }
+}
