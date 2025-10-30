@@ -11,5 +11,3 @@ In addition to the above requirements, I added the feature of the buttons being 
 <hr>
 
 Everything after the intial commit is just me messing around with CSS and JS to make the page look cooler!
-
-![Demo of project](demo.gif)
