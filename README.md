@@ -13,4 +13,4 @@ In addition to the above requirements, I added the feature of the buttons being 
 Everything after the intial commit is just me messing around with CSS and JS to make the page look cooler!
 
 Short demo of the list item hover effect:
-https://github.com/user-attachments/assets/7b1c6e60-f5f5-4513-ad68-d7b4c22b2d5d
+<video src="https://github.com/user-attachments/assets/7b1c6e60-f5f5-4513-ad68-d7b4c22b2d5d" controls autoplay loop muted width="600"></video>
