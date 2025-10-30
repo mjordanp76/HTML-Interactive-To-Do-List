@@ -1,11 +1,11 @@
 document.getElementById("submit").addEventListener("click", AddTask)
 
 function AddTask(){
-    let list = document.getElementById("list");
-    let input = document.getElementById("new-task");
-    let text = input.value;
-    let newTask = document.createElement("li");
-    let taskDiv = document.createElement("div");
+    const list = document.getElementById("list");
+    const input = document.getElementById("new-task");
+    const text = input.value;
+    const newTask = document.createElement("li");
+    const taskDiv = document.createElement("div");
 
     if (text === ""){
         return;
@@ -16,7 +16,7 @@ function AddTask(){
 
     input.value = "";
 
-    let completeBtn = document.createElement("button");
+    const completeBtn = document.createElement("button");
     completeBtn.textContent = "Finish task";
     completeBtn.className = "complete-btn";
     completeBtn.addEventListener("click", function(){
@@ -25,7 +25,7 @@ function AddTask(){
         deleteBtn.className = "btn-done";
     });
 
-    let deleteBtn = document.createElement("button");
+    const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Remove task";
     deleteBtn.className = "delete-btn";
     deleteBtn.addEventListener("click", function(){
@@ -36,3 +36,24 @@ function AddTask(){
     taskDiv.appendChild(completeBtn);
     taskDiv.appendChild(deleteBtn);
 }
+
+const list = document.getElementById("list");
+
+list.addEventListener("mousemove", (e) => {
+    const listItems = list.getElementsByTagName("li");
+    for (let li of listItems) {
+        const rect = li.getBoundingClientRect();
+        const liCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(e.clientY - liCenter);
+        const scale = Math.max(1, 1.2 - distance / 450);
+        li.style.transform = `scale(${scale})`;
+    }
+});
+
+list.addEventListener("mouseleave", () => {
+    const listItems = list.getElementsByTagName("li");
+    for (let li of listItems) {
+        li.style.transform = "scale(1)";
+    }
+});
+
