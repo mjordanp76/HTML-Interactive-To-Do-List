@@ -11,3 +11,9 @@ In addition to the above requirements, I added the feature of the buttons being 
 <hr>
 
 Everything after the intial commit is just me messing around with CSS and JS to make the page look cooler!
+
+Here's a little demo ...
+
+<video src="demo.mp4" controls autoplay loop muted width="600">
+  Your browser does not support the video tag.
+</video>
